@@ -4,10 +4,10 @@ import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { useScrollTrigger } from "@mui/material";
+import Project from "./Project";
 
 const Projects = () => {
-  const [category, setCategory] = useState("featured");
-  console.log(category);
+  const [selectedCategory, setSelectedCategory] = useState("featured");
   const categories = [
     {
       name: "featured",
@@ -39,22 +39,22 @@ const Projects = () => {
           Custom B2B & B2C Digital Experiences Engineered To Perform
         </p>
       </div>
-      <div className="flex gap-24 items-center justify-center my-16">
+      <div className="flex gap-24 items-center justify-center my-16 max-w-screen-lg mx-auto">
         {categories.map((category, index) => (
           <div
-            onClick={() => setCategory(category.name)}
-            className="flex flex-col space-y-3 items-center"
+            onClick={() => setSelectedCategory(category.name)}
+            className={` ${
+              category.name === selectedCategory &&
+              "bg-white p-6 text-black rounded-lg"
+            } flex flex-col space-y-3 items-center cursor-pointer hover:text-blue-500 duration-300 w-full `}
+            key={index}
           >
             {category?.icon}
             <h2 className="text-2xl uppercase">{category?.name}</h2>
           </div>
         ))}
-        {/* <div className="flex flex-col space-y-3 items-center">
-          <ShoppingCartOutlinedIcon sx={{fontSize:"40px"}} />
-          <h2>E-COMMERCE</h2>
-          
-        </div> */}
       </div>
+      <Project/>
     </div>
   );
 };
