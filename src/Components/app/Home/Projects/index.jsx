@@ -3,9 +3,7 @@ import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import { useScrollTrigger } from "@mui/material";
 import Project from "./Project";
-
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("featured");
   const categories = [
@@ -54,7 +52,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <Project/>
+      <Project selectedCategory={selectedCategory}/>
     </div>
   );
 };
