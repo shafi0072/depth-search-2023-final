@@ -22,7 +22,7 @@ const index = () => {
       {windowWidth < 830 ? (
         <MobileNav></MobileNav>
       ) : (
-        <div className="fixed w-full flex justify-between items-center  bg-black px-16 py-8 text-white opacity-60">
+        <div className="fixed w-full flex justify-between items-center  bg-black px-16 py-8 text-white opacity-60 z-10">
           <div className="flex gap-2 items-center">
             <img
               className="h- w-8"
