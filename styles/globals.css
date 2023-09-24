@@ -15,11 +15,20 @@ body{
 }
 
 .bg-image {
-  background-image: url(../public/image/banner/slide4.jpg);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
   background-position: center;
+  position: relative;
+  z-index: 5;
+}
+.bg-image::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  width: 100%;
+  background-color: rgba(34, 34, 58, 0.329);
+  z-index: -1;
 }
 
 .our-services {
