@@ -3,6 +3,7 @@ import Marquee from "react-fast-marquee";
 
 const index = () => {
   return (
+    //jdfkjd
     <div className="bg-black text-white">
       <h3 className="text-2xl font-semibold text-center py-4">Our Partners</h3>
       <div>
