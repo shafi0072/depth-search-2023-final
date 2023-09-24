@@ -23,7 +23,7 @@ body{
 }
 
 .our-services {
-  background-image: url(../public/image/services/bg-pattern1.png);
+  background-image: linear-gradient(#090909a2, #090909ab), url(../public/image/services/bg-pattern1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,6 +53,10 @@ body{
   border-radius: 50%;
   position: relative;
   animation: signal-animation 1s infinite;
+}
+
+.partnersBackground{
+  background-color: #090909;
 }
 
 @keyframes signal-animation {

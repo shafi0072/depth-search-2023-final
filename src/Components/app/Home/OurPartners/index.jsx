@@ -45,7 +45,7 @@ const index = () => {
   // }, []);
   return (
     //jdfkjd
-    <div className="bg-black text-white">
+    <div className="partnersBackground text-white">
       <h3 className="text-2xl md:text-4xl font-semibold text-center pt-6">
         Our Partners
       </h3>

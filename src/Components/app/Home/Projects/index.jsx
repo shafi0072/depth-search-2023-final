@@ -3,7 +3,7 @@ import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 
 const Projects = () => {
   return (
-    <div className="py-16">
+    <div className="partnersBackground py-16">
       <div className="text-center">
         <h4 className="uppercase text-2xl font-semibold ">
           EXPLORE OUR PORTFOLIO
