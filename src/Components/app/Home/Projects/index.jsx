@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
+import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
+import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { useScrollTrigger } from "@mui/material";
 
 const Projects = () => {
+  const [category, setCategory] = useState("featured");
+  console.log(category);
+  const categories = [
+    {
+      name: "featured",
+      icon: <StarBorderOutlinedIcon sx={{ fontSize: "40px" }} />,
+    },
+    {
+      name: "b2b",
+      icon: <HandshakeOutlinedIcon sx={{ fontSize: "40px" }} />,
+    },
+    {
+      name: "b2c",
+      icon: <AccountBalanceWalletOutlinedIcon sx={{ fontSize: "40px" }} />,
+    },
+    {
+      name: "e-commerce",
+      icon: <ShoppingCartOutlinedIcon sx={{ fontSize: "40px" }} />,
+    },
+  ];
   return (
     <div className="py-16">
       <div className="text-center">
@@ -15,23 +39,21 @@ const Projects = () => {
           Custom B2B & B2C Digital Experiences Engineered To Perform
         </p>
       </div>
-      <div className="flex gap-12 items-center justify-center my-16">
-        <div className="flex flex-col items-center">
-          <StarBorderOutlinedIcon />
-          <h2>FEATURED</h2>
-        </div>
-        <div className="flex flex-col items-center">
-          <StarBorderOutlinedIcon />
-          <h2>FEATURED</h2>
-        </div>
-        <div className="flex flex-col items-center">
-          <StarBorderOutlinedIcon />
-          <h2>FEATURED</h2>
-        </div>
-        <div className="flex flex-col items-center">
-          <StarBorderOutlinedIcon />
-          <h2>FEATURED</h2>
-        </div>
+      <div className="flex gap-24 items-center justify-center my-16">
+        {categories.map((category, index) => (
+          <div
+            onClick={() => setCategory(category.name)}
+            className="flex flex-col space-y-3 items-center"
+          >
+            {category?.icon}
+            <h2 className="text-2xl uppercase">{category?.name}</h2>
+          </div>
+        ))}
+        {/* <div className="flex flex-col space-y-3 items-center">
+          <ShoppingCartOutlinedIcon sx={{fontSize:"40px"}} />
+          <h2>E-COMMERCE</h2>
+          
+        </div> */}
       </div>
     </div>
   );
