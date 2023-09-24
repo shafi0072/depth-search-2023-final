@@ -58,7 +58,9 @@ body{
 .partnersBackground{
   background-color: #090909;
 }
-
+.projectBackground{
+  background-image: linear-gradient(to right, #090909, rgb(22, 22, 22));
+}
 @keyframes signal-animation {
   0% {
       transform: scale(1);
