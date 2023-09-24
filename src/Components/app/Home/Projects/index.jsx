@@ -27,7 +27,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="py-16">
+    <div className="projectBackground py-16">
       <div className="text-center">
         <h4 className="uppercase text-2xl font-semibold ">
           EXPLORE OUR PORTFOLIO
