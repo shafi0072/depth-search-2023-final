@@ -37,7 +37,7 @@ const Projects = () => {
           Custom B2B & B2C Digital Experiences Engineered To Perform
         </p>
       </div>
-      <div className="flex gap-24 items-center justify-center my-16 max-w-screen-lg mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-24 items-center justify-center my-16 max-w-screen-lg mx-auto">
         {categories.map((category, index) => (
           <div
             onClick={() => setSelectedCategory(category.name)}
