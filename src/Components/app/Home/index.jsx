@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import CaseStudies from "./CaseStudies";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import OurTeam from "./OurTeam";
 const index = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const index = () => {
       <OurServices />
       <Projects />
       <CaseStudies />
+      <OurTeam/>
       <Contact />
     </div>
   );
