@@ -9,11 +9,11 @@ const RightSide = ({caseStudy}) => {
             </div>
             <div className='mt-32 flex justify-between'>
                 <div>
-                    <h1 className='text-6xl md:text-[120px] lg:text-[200px] text-blue-500'>{caseStudy?.increase_in_overall}</h1>
+                    <h1 className='text-6xl md:text-[120px] 2xl:text-[200px] text-blue-500'>{caseStudy?.increase_in_overall}</h1>
                     <p className='md:ml-12 md:text-3xl'>Increase in overall traffic</p>
                 </div>
                 <div>
-                    <h1 className='text-6xl md:text-[120px] lg:text-[200px] text-blue-500 '>{caseStudy?.  faster_loading_speed}</h1>
+                    <h1 className='text-6xl md:text-[120px] 2xl:text-[200px] text-blue-500 '>{caseStudy?.  faster_loading_speed}</h1>
                     <p className='md:ml-3 md:text-3xl'>Faster Loading Speed</p>
                 </div>
             </div>

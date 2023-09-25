@@ -4,6 +4,7 @@ import OurServices from './OurServices/index'
 import OurPartners from "../Home/OurPartners/index"
 import Projects from './Projects';
 import CaseStudies from './CaseStudies';
+import Contact from './Contact';
 const index = () => {
     return (
         <div>
@@ -12,6 +13,7 @@ const index = () => {
         <OurServices/>
         <Projects/>
         <CaseStudies/>
+        <Contact/>
         </div>
     );
 };
