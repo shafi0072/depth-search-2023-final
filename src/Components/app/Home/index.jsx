@@ -5,7 +5,6 @@ import OurPartners from "../Home/OurPartners/index";
 import Projects from "./Projects";
 import CaseStudies from "./CaseStudies";
 import Contact from "./Contact";
-import Footer from "./Footer";
 import OurTeam from "./OurTeam";
 const index = () => {
   return (
