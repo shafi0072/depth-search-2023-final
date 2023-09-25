@@ -6,7 +6,7 @@ export const teams = [
       linkedin: "https://www.linkedin.com/in/johndoe",
       github: "https://github.com/johndoe",
       twitter: "https://www.instagram.com/johndoe",
-      image: "https://example.com/johndoe.jpg" // Add the URL to John's image
+      image: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" // Add the URL to John's image
     },
     {
       name: "Jane Smith",
@@ -15,7 +15,7 @@ export const teams = [
       linkedin: "https://www.linkedin.com/in/janesmith",
       github: "https://github.com/janesmith",
       twitter: "https://www.instagram.com/janesmith",
-      image: "https://example.com/janesmith.jpg" // Add the URL to Jane's image
+      image: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" // Add the URL to Jane's image
     },
     {
       name: "Alice Johnson",
@@ -24,7 +24,7 @@ export const teams = [
       linkedin: "https://www.linkedin.com/in/alicejohnson",
       github: "https://github.com/alicejohnson",
       twitter: "https://www.instagram.com/alicejohnson",
-      image: "https://example.com/alicejohnson.jpg" // Add the URL to Alice's image
+      image: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" // Add the URL to Alice's image
     },
     {
       name: "Bob Brown",
@@ -33,6 +33,6 @@ export const teams = [
       linkedin: "https://www.linkedin.com/in/bobbrown",
       github: "https://github.com/bobbrown",
       twitter: "https://www.instagram.com/bobbrown",
-      image: "https://example.com/bobbrown.jpg" // Add the URL to Bob's image
+      image: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png "
     }
   ];
