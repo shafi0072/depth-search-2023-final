@@ -11,7 +11,7 @@ const NavManus = () => {
                 <li>Portfolio</li>
                 <li>Blog</li>
                 <Link href='/case-studies'>Case Studies</Link>
-                <li>About</li>
+                <Link href='/about'>About</Link>
                 <li>Contact</li>
             </ul>
         </div>
