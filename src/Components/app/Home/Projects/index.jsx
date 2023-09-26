@@ -44,7 +44,7 @@ const Projects = () => {
             className={` ${
               category.name === selectedCategory &&
               "bg-white p-6 text-black rounded-lg"
-            } flex flex-col space-y-3 items-center cursor-pointer hover:text-blue-500 duration-300 w-full `}
+            } flex flex-col space-y-3 items-center cursor-pointer hover:text-blue-500 duration-300 w-[300px] `}
             key={index}
           >
             {category?.icon}
