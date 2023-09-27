@@ -9,7 +9,7 @@ import OurTeam from "./OurTeam";
 const index = () => {
   return (
     <div>
-      {/* <Banner/> */}
+      <Banner/>
       <OurPartners />
       <OurServices />
       <Projects />

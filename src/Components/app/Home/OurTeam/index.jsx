@@ -1,8 +1,44 @@
-import { teams } from "@/src/constant/ourTeam";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { createClient, groq } from "next-sanity";
 
 const OurTeam = () => {
+  const [teams, setTeams] = useState([])
+    const projectId = 'kwzw2vfn';
+    const dataset = 'production'
+    const apiVersion = "2023-05-03";
+    const client = createClient({
+        projectId,
+        dataset,
+        apiVersion, // https://www.sanity.io/docs/api-versioning
+        useCdn: true, // if you're using ISR or only static generation at build time then you can set this to `false` to guarantee no stale content
+      });
+      useEffect( () => {
+        client
+          .fetch(
+            groq`*[_type == "team"]{
+        _id,
+        id,
+        name,
+        position,
+        image{
+            asset->{
+                _id,
+                url
+            }
+        },
+        facebook,
+        linkedin,
+        github,
+        twitter
+      }`
+          )
+          .then((data) => {
+            // console.log({data});
+            setTeams(data)
+            // Access the full array of navbar data here
+          });
+      }, []);
   return (
     <div>
       <section className="">
@@ -18,10 +54,10 @@ const OurTeam = () => {
           </div>
           <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
            {
-            teams.map((team,index)=> <div className="text-center text-gray-500 dark:text-gray-400">
+            teams?.sort((a,b)=> a.id - b.id).map((team,index)=> <div className="text-center text-gray-500 dark:text-gray-400">
             <img
-              className="mx-auto mb-4 w-36 h-36 rounded-full"
-              src={team?.image}
+              className="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
+              src={team?.image?.asset?.url}
               alt="Bonnie Avatar"
             />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
