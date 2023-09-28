@@ -40,8 +40,8 @@ const Clients = () => {
     return (
         <>
             <h1 className='uppercase text-[20px] font-bold'>WE PARTNER WITH BRANDS TO</h1>
-            <h2 className='text-[45px] font-bold my-5'>Create Superior Digital Experiences</h2>
-            <div className='max-10 grid grid-cols-5 gap-x-10 my-10 gap-y-10 '>
+            <h2 className='text-[35px] md:text-[45px] font-bold my-5'>Create Superior Digital Experiences</h2>
+            <div className='mx-10 grid grid-cols-3 md:grid-cols-5 gap-x-5 md:gap-x-10 my-5 md:my-10 gap-y-5 md:gap-y-10 '>
                 {partners?.reverse()?.slice(0,8)?.map((item, index) => <div key={index} className=' flex justify-center items-center '>
                     <img src={item?.mainImage?.asset?.url} alt="" />
                 </div>)}
