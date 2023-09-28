@@ -19,7 +19,7 @@ export const services = [
 
     },
     {   
-        id:"2",
+        id:"3",
         name:"B2B Lead Generation",
         icon:<HandshakeOutlinedIcon sx={{fontSize:"70px"}}/>,
         description:"Our B2B lead generation services are your gateway to a steady stream of high-quality leads."
