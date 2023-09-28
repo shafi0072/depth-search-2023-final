@@ -31,7 +31,7 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="flex items-center gap-2">
                 <LocalPhoneOutlinedIcon />
-                +88017894954
+                +8801763740664
               </p>
               <p className="flex items-center gap-2">
                 <LocalPhoneOutlinedIcon />

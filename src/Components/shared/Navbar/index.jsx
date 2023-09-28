@@ -38,7 +38,7 @@ const index = () => {
             <div className="bg-primary p-4 rounded-full cursor-pointer">
               <FaPhone />
             </div>
-            <h4 className="text-xl font-semibold">+88 01565656234</h4>
+            <h4 className="text-xl font-semibold">+88 01763740664</h4>
           </div>
         </div>
       )}
