@@ -9,7 +9,7 @@ const NavManus = () => {
         <div className='uppercase'>
             <ul className='flex gap-8 items-center font-semibold cursor-pointer'>
                 <li onClick={()=>router.push("/")}>Home</li>
-                <li>Services</li>
+                <li onClick={()=>router.push("/services")}>Services</li>
                 <li onClick={()=>router.push("/projects")}>Projects</li>
                 <li>Blog</li>
                 <Link href='/case-studies'>Case Studies</Link>
