@@ -40,7 +40,7 @@ const Footer = () => {
               </p>
               <p className="-ml-3">
                 <ArrowRightIcon sx={{fontSize:"50px"}}/>
-                <a className="cursor-pointer hover:text-blue-500" target="blank" href="https://www.designrush.com/agency/profile/depth-search">Visit us in Design Rush</a>
+                <a className="cursor-pointer hover:text-blue-500" target="blank" href="https://www.designrush.com/agency/profile/depth-search">Visit us in DESIGNRUSH</a>
               </p>
               <div className="flex items-center gap-4 pt-3">
                 <LinkedInIcon sx={{ fontSize: "30px" }} />
