@@ -2,6 +2,7 @@ import React from "react";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import InstagramIcon from "@mui/icons-material/Instagram";
 const Footer = () => {
   return (
@@ -31,11 +32,15 @@ const Footer = () => {
             <div className="space-y-3">
               <p className="flex items-center gap-2">
                 <LocalPhoneOutlinedIcon />
-                +88017894954
+                +8801763740664
               </p>
               <p className="flex items-center gap-2">
                 <LocalPhoneOutlinedIcon />
                 depthsearch.official@gmail.com
+              </p>
+              <p className="-ml-3">
+                <ArrowRightIcon sx={{fontSize:"50px"}}/>
+                <a className="cursor-pointer hover:text-blue-500" target="blank" href="https://www.designrush.com/agency/profile/depth-search">Visit us in Design Rush</a>
               </p>
               <div className="flex items-center gap-4 pt-3">
                 <LinkedInIcon sx={{ fontSize: "30px" }} />
