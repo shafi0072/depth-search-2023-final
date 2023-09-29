@@ -8,8 +8,8 @@ const NavManus = () => {
     return (
         <div className='uppercase'>
             <ul className='flex gap-8 items-center font-semibold cursor-pointer'>
-                <li onClick={()=>router.push("/")}>Home</li>
-                <li onClick={()=>router.push("/services")}>Services</li>
+                <Link href='/'>Home</Link>
+                <Link href='/services'>Services</Link>
                 <li onClick={()=>router.push("/projects")}>Projects</li>
                 <li>Blog</li>
                 <Link href='/case-studies'>Case Studies</Link>

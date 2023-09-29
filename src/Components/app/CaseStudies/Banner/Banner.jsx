@@ -7,7 +7,7 @@ const Banner = () => {
         <h1 className="uppercase text-xl md:text-2xl lg:text-3xl font-bold">
           CASE STUDIES
         </h1>
-        <h2 className=" text-xl md:text-4xl lg:text-7xl font-semibold my-6">
+        <h2 className=" text-xl md:text-4xl lg:text-7xl mx-0 md:mx-[200px] font-semibold my-6">
           We Focus On Driving Measurable Results
         </h2>
         <div className="mt-10">
