@@ -20,11 +20,11 @@ const ContactForm = () => {
                 <HomeOutlinedIcon className='absolute left-0'/>
                 </div>
                 <div className='w-full relative'>
-                <input className='border-b-2 ps-8 pb-3 bg-transparent w-full outline-none' type="text" placeholder='Name*' />
+                <input className='border-b-2 ps-8 pb-3 bg-transparent w-full outline-none' type="text" placeholder='Email*' />
                 <EmailOutlinedIcon className='absolute left-0'/>
                 </div>
                 <div className='w-full relative'>
-                <input className='border-b-2 ps-8 pb-3 bg-transparent w-full outline-none' type="text" placeholder='Name*' />
+                <input className='border-b-2 ps-8 pb-3 bg-transparent w-full outline-none' type="text" placeholder='Phone*' />
                 <LocalPhoneOutlinedIcon className='absolute left-0'/>
                 </div>
                 <div className='w-full relative'>
