@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/react';
 export default function App({ Component, pageProps }) {
   return (
     <AppContext>
+      
       <Layout>
         <Component {...pageProps} />
       </Layout>
