@@ -61,7 +61,7 @@ const ContactForm = () => {
                         <EmailOutlinedIcon className='absolute left-0' />
                     </div>
                     <div className='w-full relative'>
-                        <input className='border-b-2 ps-8 pb-3 bg-transparent w-full outline-none' type="text" name='number' placeholder='number*' />
+                        <input className='border-b-2 ps-8 pb-3 bg-transparent w-full outline-none' type="text" name='number' placeholder='Number*' />
                         <LocalPhoneOutlinedIcon className='absolute left-0' />
                     </div>
                     <div className='w-full relative'>
