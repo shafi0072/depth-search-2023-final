@@ -164,31 +164,40 @@ const Footer = () => {
           {/* logo section end */}
           {/* "location section start */}
           <div className="container mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-6  md:gap-12 lg:gap-22 my-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-6  md:gap-12 lg:gap-22 my-10">
               {/* item section start */}
               <div>
-              <h3 className="lg:text-2xl md:text-lg sm:text-2xl font-bold mb-2 text-3xl">Miami</h3>
-              <p><a href="#">17975 Collins Avenue<br></br>Sunny Isles Beach,<br></br>FL 33160</a></p>
+              <h3 className="lg:text-2xl md:text-lg sm:text-2xl font-bold mb-2 text-3xl">Bangladesh</h3>
+              <p><a href="#">
+              City: Rajshahi<br></br>
+              Street: UpoVadra<br></br>
+              address: Apartment A70, <br></br>4th floor, Unit A, Sericulture, Rajshahi<br></br>
+              Country: Bangladesh<br></br>
+              </a></p>
               </div>
               {/* item section end */}
               {/* item section start */}
               <div>
-              <h3 className="lg:text-2xl md:text-lg sm:text-2xl font-bold mb-2 text-3xl">New York</h3>
-              <p><a href="#">18 West 18th Street<br></br>New York, NY 10011</a></p>
+              <h3 className="lg:text-2xl md:text-lg sm:text-2xl font-bold mb-2 text-3xl">Malaysia</h3>
+              <p><a href="#">
+              City: Kuala Lumpur<br></br>
+              Street: Cheras<br></br>
+              address: No. 44, Jalan Desa, Melur 4/1<br></br>
+              Country: Malaysia<br></br>
+              </a></p>
               </div>
               {/* item section end */}
               {/* item section start */}
               <div>
-              <h3 className="lg:text-2xl md:text-lg sm:text-2xl font-bold mb-2 text-3xl">Chicago</h3>
-              <p><a href="#">625 W Adams St<br></br>Chicago, IL 60661</a></p>
+              <h3 className="lg:text-2xl md:text-lg sm:text-2xl font-bold mb-2 text-3xl">United State</h3>
+              <p><a href="#">
+              City: Miami<br></br>
+              Street: North Miami beach,Florida<br></br>
+              Country: United State<br></br>
+              </a></p>
               </div>
               {/* item section end */}
-              {/* item section start */}
-              <div>
-              <h3 className="lg:text-2xl md:text-lg sm:text-2xl font-bold mb-2 text-3xl">California</h3>
-              <p><a href="#">600 B St,<br></br>San Diego, CA 92101</a></p>
-              </div>
-              {/* item section end */}
+
             </div>
           </div>
           {/* location section end */}
@@ -197,10 +206,12 @@ const Footer = () => {
           {/* border end */}
           {/* contact section start */}
           <div className="container mx-auto">
-            <div className="block sm:flex sm:gap-6 md:gap-14">
-              <p className="mt-2"><a href="#">©2023 Digital Silk. All rights reserved</a></p>
+            <div className="block sm:flex sm:gap-6 md:gap-10">
+              <p className="mt-2"><a href="#">©{new Date().getFullYear()} DepthSearch.<br></br>All rights reserved</a></p>
               <p className="mt-2"><a href="#">Privacy Policy</a></p>
-              <p className="mt-2"><a href="#">Call us at (800) 206-9413</a></p>
+              <p className="mt-2"><a href="#">Call us at +8801763740664</a></p>
+              <p className="mt-2"><a href="#">Email us at hello@depthsearch.net </a></p>
+              <p className="mt-2"><a href="#">If you want to collab with us, connect us at collaboration@depthsearch.net</a></p>
             </div>
           </div>
           {/* contact section end */}
