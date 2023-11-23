@@ -84,3 +84,28 @@ body {
 .cases:hover .cases-image {
   transform: scale(1);
 }
+
+
+.rData{
+  position: relative;
+  background-color: black;
+  
+}
+
+
+/* .rData::before{
+  content: '';
+  position: absolute;
+  border: 10px solid black;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  width: 82%;
+  height: 82%;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+} */

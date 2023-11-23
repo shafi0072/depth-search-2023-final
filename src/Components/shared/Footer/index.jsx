@@ -209,8 +209,16 @@ const Footer = () => {
             <div className="block sm:flex sm:gap-6 md:gap-10">
               <p className="mt-2"><a href="#">©{new Date().getFullYear()} DepthSearch.<br></br>All rights reserved</a></p>
               <p className="mt-2"><a href="#">Privacy Policy</a></p>
-              <p className="mt-2"><a href="#">Call us at +8801763740664</a></p>
-              <p className="mt-2"><a href="#">Email us at hello@depthsearch.net </a></p>
+              <p className="mt-2">
+                <span>Call us at</span><br></br>
+                <a href="#"> +8801763740664</a>
+                <a href="#"> hello@depthsearch.net </a><br></br>
+                <a href="#"> collaboration@depthsearch.net </a>
+              </p>
+              <p className="mt-2">
+                <span>Email us at</span><br></br>
+                <a href="#"> hello@depthsearch.net </a><br></br>
+              </p>
               <p className="mt-2"><a href="#">If you want to collab with us, connect us at collaboration@depthsearch.net</a></p>
             </div>
           </div>
