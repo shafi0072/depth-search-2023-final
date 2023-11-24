@@ -11,7 +11,7 @@ const NavManus = () => {
                 <Link href='/'>Home</Link>
                 <Link href='/services'>Services</Link>
                 <li onClick={()=>router.push("/projects")}>Projects</li>
-                <li>Blog</li>
+                <Link href='/blog'>Blog</Link>
                 <Link href='/case-studies'>Case Studies</Link>
                 <Link href='/about'>About</Link>
                 <li onClick={()=>router.push("/contact-us")}>Contact</li>
