@@ -20,12 +20,12 @@ const Blog = () => {
                     {/* card 1 */}
                     <div>
                          <div>
-                              <img className='h-80 w-full' src="https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept-bright-vibrant-violet-isolated-illustration_335657-986.jpg?size=626&ext=jpg&uid=R127925613&ga=GA1.1.825466924.1700731047&semt=ais" alt="" />
+                              <img className='h-80 w-full rounded-md' src="https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept-bright-vibrant-violet-isolated-illustration_335657-986.jpg?size=626&ext=jpg&uid=R127925613&ga=GA1.1.825466924.1700731047&semt=ais" alt="" />
                          </div>
                          <div>
                               <div className='mt-5'>
                                    <div className='flex items-center gap-3'>
-                                        <p className='bg-blue-400 px-2 py-1 rounded-md'>javascript</p>
+                                        <p className='bg-orange-500 px-2 py-1 rounded-md'>javascript</p>
                                         <p>12-11-2020</p>
                                    </div>
                                    <p className='text-xl font-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quis.</p>
@@ -35,7 +35,7 @@ const Blog = () => {
                     {/* card 2 */}
                     <div>
                          <div>
-                              <img className='h-80 w-full' src="https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?size=626&ext=jpg&uid=R127925613&ga=GA1.1.825466924.1700731047&semt=ais" alt="" />
+                              <img className='h-80 w-full rounded-md' src="https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?size=626&ext=jpg&uid=R127925613&ga=GA1.1.825466924.1700731047&semt=ais" alt="" />
                          </div>
                          <div>
                               <div className='mt-5'>
