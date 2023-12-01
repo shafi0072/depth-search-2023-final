@@ -14,7 +14,6 @@ const Banner = () => {
           <button className="uppercase bg-primary px-6 py-4 rounded text-xl mr-4">
             Request a proposal
           </button>
-
         </div>
       </div>
     </div>
