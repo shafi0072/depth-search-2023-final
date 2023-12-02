@@ -84,3 +84,30 @@ body {
 .cases:hover .cases-image {
   transform: scale(1);
 }
+
+
+
+.rData{
+  position: relative;
+  background-color: black;
+  
+}
+
+
+
+.translateX-hover{
+  transform: translateX(0);
+  transition-duration: .3s;
+}
+
+.translateX-hover:hover{
+  transform: translateX(5px)
+}
+.translateY-hover{
+  transform: translateY(0);
+  transition-duration: .3s;
+}
+
+.translateY-hover:hover{
+  transform: translateY(-5px)
+}
