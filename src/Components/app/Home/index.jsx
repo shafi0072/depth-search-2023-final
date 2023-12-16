@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import CaseStudies from "./CaseStudies";
 import Contact from "./Contact";
 import OurTeam from "./OurTeam";
+
 const index = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const index = () => {
       <Projects />
       {/* <CaseStudies /> */}
       <OurTeam />
+      
       <Contact />
     </div>
   );

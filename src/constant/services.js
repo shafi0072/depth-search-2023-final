@@ -1,6 +1,7 @@
 import PersonalVideoIcon from '@mui/icons-material/PersonalVideo';
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 import TabletAndroidIcon from '@mui/icons-material/TabletAndroid';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import AddBusinessIcon from '@mui/icons-material/AddBusiness';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 export const services = [
@@ -9,7 +10,6 @@ export const services = [
         name:"Web development",
         icon:<PersonalVideoIcon sx={{fontSize:"70px"}}/>,
         description:"We specialize in web  development, turning your ideas into stunning digital reality."
-
     },
     {   
         id:"2",
@@ -20,10 +20,9 @@ export const services = [
     },
     {   
         id:"3",
-        name:"B2B Lead Generation",
-        icon:<HandshakeOutlinedIcon sx={{fontSize:"70px"}}/>,
-        description:"Our B2B lead generation services are your gateway to a steady stream of high-quality leads."
-
+        name:"UX/UI Design",
+        icon:<DesignServicesIcon sx={{fontSize:"70px"}}/>,
+        description:"Elevate your brand with our UX/UI experts, creating intuitive interfaces and seamless digital experiences that captivate users."
     },
     // {   
     //     id:"3",
