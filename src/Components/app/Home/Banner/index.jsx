@@ -70,8 +70,7 @@ const index = () => {
     <div>
       <div
         style={{ backgroundImage: `url(${author?.image?.asset?.url})` }}
-        className="bg-image md:h-[75vh] lg:h-[90vh] w-full text-center flex flex-col items-center justify-center py-12 md:py-0"
-      >
+        className="bg-image md:h-[75vh] lg:h-[90vh] w-full text-center flex flex-col items-center justify-center py-12 md:py-0">
         <div className="text-white">
           <h2 className="uppercase text-4xl md:text-5xl lg:text-7xl font-bold">
             {author?.name}
