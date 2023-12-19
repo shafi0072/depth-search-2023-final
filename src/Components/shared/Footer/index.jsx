@@ -72,7 +72,7 @@ const Footer = () => {
 				<div className='container mx-auto'>
 					{/* title section start */}
 					<div>
-						<h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold'>
+						<h1 className='text-3xl sm:text-4xl md:text-5xl md:-ms-12 lg:text-6xl font-bold'>
 							Let's Grow Your Brand
 						</h1>
 					</div>
@@ -289,14 +289,14 @@ const Footer = () => {
 					<div className='block sm:flex sm:gap-6 md:gap-14'>
 						<p className='mt-2'>
 							<a href='#'>
-								©2023 Digital Silk. All rights reserved
+								©2023 Depth Search. All rights reserved
 							</a>
 						</p>
 						<p className='mt-2'>
 							<a href='#'>Privacy Policy</a>
 						</p>
 						<p className='mt-2'>
-							<a href='#'>Call us at (800) 206-9413</a>
+							<a href='#'>Call us at (+880) 1727-768266</a>
 						</p>
 						<p className='mt-2'>
 							<a href='#'>hello@depthsearch.net</a>
