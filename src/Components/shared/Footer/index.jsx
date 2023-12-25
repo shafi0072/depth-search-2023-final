@@ -296,7 +296,7 @@ const Footer = () => {
 							<a href='#'>Privacy Policy</a>
 						</p>
 						<p className='mt-2'>
-							<a href='#'>Call us at (+880) 1727-768266</a>
+							<a href='#'>Call us at +8801763740664</a>
 						</p>
 						<p className='mt-2'>
 							<a href='#'>hello@depthsearch.net</a>

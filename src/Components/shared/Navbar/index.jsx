@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../../../public/image/logo/logotwo.png";
 import NavManus from "./NavManus";
-import { FaPhone } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaPhone, FaVoicemail, FaWhatsapp } from "react-icons/fa";
 import MobileNav from "../Navbar/MobileNav/index";
+import EmailIcon from '@mui/icons-material/Email';
+import { Instagram, LinkedIn, Phone, WhatsApp } from "@mui/icons-material";
 
 const index = () => {
   const [windowWidth, setWindowWidth] = useState(null);
@@ -19,7 +21,7 @@ const index = () => {
   }, []);
   return (
     <div>
-      {windowWidth < 830 ? (
+      {windowWidth < 1250 ? (
         <MobileNav></MobileNav>
       ) : (
         <div className="fixed w-full flex justify-between items-center  bg-black px-16 py-8 text-white opacity-60 z-10">
@@ -34,11 +36,23 @@ const index = () => {
           <div>
             <NavManus />
           </div>
-          <div className="flex items-center gap-3">
-            <div className="bg-primary p-4 rounded-full cursor-pointer">
-              <FaPhone />
+          <div className="flex items-center gap-2">
+            <div className="bg-primary p-3 rounded-full cursor-pointer">
+              <a href="tel:+88 01763740664"><Phone /></a>
             </div>
-            <h4 className="text-xl font-semibold">+88 01763740664</h4>
+            <div className="bg-primary p-3 rounded-full cursor-pointer">
+              <a href="https://wa.me/+8801763740664"><WhatsApp /></a>
+            </div>
+            <div className="bg-primary p-3 rounded-full cursor-pointer">
+              <Instagram />
+            </div>
+            <div className="bg-primary p-3 rounded-full cursor-pointer">
+              <LinkedIn />
+            </div>
+            <div className="bg-primary p-3 rounded-full cursor-pointer">
+              <a href="mailto:deapth.search.it@gmail.com"><EmailIcon /></a>
+            </div>
+            {/* <h4 className="text-xl font-semibold">+88 01763740664</h4> */}
           </div>
         </div>
       )}
