@@ -9,8 +9,8 @@ const Cards = ({service}) => {
         <h3 className="uppercase text-xl font-bold pb-6">
          {service?.name}
         </h3>
-        <p className="px-1.5 py-1 absolute right-0 bottom-0 inline bg-[rgb(49,56,60)]">
-          {service?.id}
+        <p className="px-1.5 py-1 absolute right-0 bottom-0 inline ">
+          {/* {service?.id} */}
         </p>
       </div>
       <div>
@@ -20,7 +20,7 @@ const Cards = ({service}) => {
        }
        </div>
         <p>
-          {service?.description}
+          {service?.description ?  service?.description.slice(0,80).replace(/\s[^\s]*$/, '') : ''}...
         </p>
       </div>
     </div>

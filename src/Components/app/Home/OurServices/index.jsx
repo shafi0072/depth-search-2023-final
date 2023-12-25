@@ -14,10 +14,10 @@ const index = () => {
             <h2 className="text-4xl font-bold text-white">SERVICES WE OFFER</h2>
           </div>
           <div>
-            <p className="text-gray-300 mt-6">
+            {/* <p className="text-gray-300 mt-6">
               There are many variations of passages of available but majority
               alteration in some <br /> form, by humou or randomised words
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className=" md:h-[60vh]  w-full text-center flex flex-col items-center justify-center py-12 md:py-0">
+        <div className="md:h-[60vh] md:pt-52 mb-20 w-full text-center flex flex-col items-center justify-center">
       <div className="text-white">
         <h1 className="uppercase text-xl md:text-2xl lg:text-3xl font-bold">
         FROM CONCEPT TO REALITY

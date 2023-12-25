@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { createClient, groq } from "next-sanity";
+import Link from "next/link";
 
 const OurTeam = () => {
   const [teams, setTeams] = useState([]);
@@ -54,9 +55,9 @@ const OurTeam = () => {
 					</div>
 					<div className='grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
 						{teams
-							?.sort((a, b) => a.id - b.id)
+							?.sort((a, b) => a.id - b.id).slice(0,8)
 							.map((team, index) => (
-								<div className='text-center text-gray-500 dark:text-gray-400'>
+								<div key={index} className='text-center text-gray-500 dark:text-gray-400'>
 									<img
 										className='mx-auto mb-4 w-36 h-36 rounded-full object-cover'
 										src={team?.image?.asset?.url}
@@ -134,7 +135,10 @@ const OurTeam = () => {
 							))}
 
 						
-					</div>
+          </div>
+          <div className="mt-10">
+          <Link href={`/about`}><button className="py-2 px-5 border rounded-md text-white">See More</button></Link>
+          </div>
 				</div>
 			</section>
 		</div>
