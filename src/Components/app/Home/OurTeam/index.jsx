@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { createClient, groq } from "next-sanity";
 import Link from "next/link";
@@ -40,6 +40,27 @@ const OurTeam = () => {
         // Access the full array of navbar data here
       });
   }, []);
+	const teamRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+	useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setIsVisible(true);
+        observer.disconnect();
+      }
+    });
+
+    if (teamRef.current) {
+      observer.observe(teamRef.current);
+    }
+
+    return () => {
+      if (teamRef.current) {
+        observer.unobserve(teamRef.current);
+      }
+    };
+  }, [teamRef]);
   return (
 		<div>
 			<section className=''>
@@ -53,11 +74,11 @@ const OurTeam = () => {
 							on in managing projects
 						</p>
 					</div>
-					<div className='grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+					<div ref={teamRef} className='grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
 						{teams
 							?.sort((a, b) => a.id - b.id).slice(0,8)
 							.map((team, index) => (
-								<div key={index} className='text-center text-gray-500 dark:text-gray-400'>
+								<div  key={index} className={isVisible && 'team-animation text-center text-gray-500 dark:text-gray-400'}>
 									<img
 										className='mx-auto mb-4 w-36 h-36 rounded-full object-cover'
 										src={team?.image?.asset?.url}

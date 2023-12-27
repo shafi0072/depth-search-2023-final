@@ -9,14 +9,13 @@ import OurTeam from "./OurTeam";
 
 const index = () => {
   return (
-    <div>
+    <div className="fade-in">
       <Banner/>
       <OurPartners />
       <OurServices />
       <Projects />
       {/* <CaseStudies /> */}
       <OurTeam />
-      
       <Contact />
     </div>
   );

@@ -22,8 +22,10 @@
     "react-fast-marquee": "^1.6.1",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.10.1",
+    "react-typewriter-hook": "^1.0.2",
     "styled-components": "^5.3.11",
-    "sweetalert2": "^11.7.31"
+    "sweetalert2": "^11.7.31",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",
