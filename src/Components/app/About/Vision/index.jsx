@@ -11,7 +11,7 @@ const Vision = () => {
         <div className="card-animation-1 relative md:ml-20 lg:ml-0">
           <div className='bg-black w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[250px] md:h-[250px] lg:w-[280px] lg:h-[280px] mx-auto transform rotate-45 overflow-hidden relative'>
             <div >
-                <img className=' w-[100%] mx-auto transform -rotate-45 absolute scale-[180%]' src='/image/about/4.png'/>
+                <img className=' w-[100%] mx-auto transform -rotate-45 absolute scale-[180%]' src='/image/About/4.png'/>
             </div>
           </div>
           {/* <div className='absolute left-32 sm:top-[64%] sm:left-[46%]  md:top-[58%] md:left-[42%] lg:top-72 lg:left-40'>
@@ -26,7 +26,7 @@ const Vision = () => {
         <div className="card-animation-1 relative md:ml-20 lg:ml-0">
           <div className='bg-black w-[220px] h-[220px] sm:w-[320px] sm:h-[320px] md:w-[250px] md:h-[250px] lg:w-[280px] lg:h-[280px] mx-auto transform rotate-45 overflow-hidden relative'>
             <div className=' w-[100%] mx-auto transform -rotate-45 absolute scale-[140%]'>
-                <img src='/image/about/2.png'></img>
+                <img src='/image/About/2.png'></img>
             </div>
           </div>
           {/* <div className='absolute left-32 sm:top-[64%] sm:left-[46%]  md:top-[58%] md:left-[42%] lg:top-72 lg:left-40'>
