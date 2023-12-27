@@ -1,6 +1,4 @@
-import Image from 'next/image';
-import visionImg from "../../../../../public/image/about/1.png";
-import icon from '../../../../../public/image/vision/visionIcon1.png';
+
 
 
 const Vision = () => {
