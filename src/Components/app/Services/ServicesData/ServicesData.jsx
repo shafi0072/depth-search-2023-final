@@ -1,8 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import ForwardOutlinedIcon from '@mui/icons-material/ForwardOutlined';
 import { createClient, groq } from 'next-sanity';
 const ServicesData = () => {
     const [services, setServices] = useState([])
+
+    const servicesRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+	useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setIsVisible(true);
+        observer.disconnect();
+      }
+    });
+
+    if (servicesRef.current) {
+      observer.observe(servicesRef.current);
+    }
+
+    return () => {
+      if (servicesRef.current) {
+        observer.unobserve(servicesRef.current);
+      }
+    };
+  }, [servicesRef]);
+
     const projectId = 'kwzw2vfn';
     const dataset = 'production'
     const apiVersion = "2023-05-03";
@@ -82,7 +105,7 @@ const ServicesData = () => {
     ]
     return (
         <div className='max-w-7xl mx-auto'>
-            {services?.map((item, index) => <div key={index} className={`flex  flex-col md:flex-row justify-between items-center mb-10`}>
+            {services?.map((item, index) => <div key={index} ref={servicesRef} className={`animate-from-${index + 1 } flex  flex-col md:flex-row justify-between items-center mb-10`}>
 
                 <div className={`w-11/12 mx-auto  md:mx-0 md:w-5/12 ${index % 2 === 0 ? 'order-1' : 'order-2'}`} >
                     <img src={item?.image?.asset?.url} className='w-full h-full object-cover' alt="" />

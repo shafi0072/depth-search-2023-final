@@ -5,6 +5,7 @@ import { FaInstagram, FaLinkedin, FaPhone, FaVoicemail, FaWhatsapp } from "react
 import MobileNav from "../Navbar/MobileNav/index";
 import EmailIcon from '@mui/icons-material/Email';
 import { Instagram, LinkedIn, Phone, WhatsApp } from "@mui/icons-material";
+import Link from "next/link";
 
 const index = () => {
   const [windowWidth, setWindowWidth] = useState(null);
@@ -25,14 +26,14 @@ const index = () => {
         <MobileNav></MobileNav>
       ) : (
         <div className="fixed w-full flex justify-between items-center  bg-black px-16 py-8 text-white opacity-60 z-10">
-          <div className="flex gap-2 items-center">
+          <Link href="/"  className="flex gap-2 items-center">
             <img
               className="h- w-8"
               src="https://i.ibb.co/5L1dmVz/logotwo.png"
               alt=""
             />
             <h2 className="text-2xl font-bold cursor-pointer">DEPTH SEARCH </h2>
-          </div>
+          </Link>
           <div>
             <NavManus />
           </div>

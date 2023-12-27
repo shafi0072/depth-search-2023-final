@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, {  useState, useEffect, useRef } from "react";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
@@ -6,9 +6,27 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Project from "./Project";
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("featured");
+	const projectRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
- 
+	useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setIsVisible(true);
+        observer.disconnect();
+      }
+    });
 
+    if (projectRef.current) {
+      observer.observe(projectRef.current);
+    }
+
+    return () => {
+      if (projectRef.current) {
+        observer.unobserve(projectRef.current);
+      }
+    };
+  }, [projectRef]);
   const categories = [
     {
       name: "featured",
@@ -40,14 +58,14 @@ const Projects = () => {
 					Custom B2B & B2C Digital Experiences Engineered To Perform
 				</p>
 			</div>
-			<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-24 items-center justify-center my-16 max-w-screen-lg mx-auto space-y-3 md:space-y-0 '>
+			<div div ref={projectRef} className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-24 items-center justify-center my-16 max-w-screen-lg mx-auto space-y-3 md:space-y-0 '>
 				{categories.map((category, index) => (
 					<div
 						onClick={() => setSelectedCategory(category.name)}
-						className={` ${
+						className={isVisible ? `${index % 2 === 0 ? "card-animation-1" : "card-animation-2"} ${
 							category.name === selectedCategory &&
 							"bg-white p-6 text-black rounded-lg"
-						} flex flex-col space-y-3 items-center cursor-pointer hover:text-blue-500 duration-300 w-full lg:w-[300px]`}
+						} flex flex-col space-y-3 items-center cursor-pointer hover:text-blue-500 duration-300 w-full lg:w-[300px]`: ''}
 						key={index}
 					>
 						{category?.icon}
@@ -55,7 +73,7 @@ const Projects = () => {
 					</div>
 				))}
 			</div>
-				<Project selectedCategory={selectedCategory} />
+				<Project selectedCategory={selectedCategory} isVisible={isVisible}/>
 			{/* <div className='max-w-screen-2xl mx-auto md:px-16 px-4 md:pt-16 py-6 md:pb-10'>
 			</div> */}
 		</div>

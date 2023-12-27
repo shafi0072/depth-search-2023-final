@@ -2,9 +2,9 @@ import React from "react";
 import webIcon from "../../../../../public/image/services/icons/8759392.png";
 import { FaDesktop } from "react-icons/fa";
 
-const Cards = ({service}) => {
+const Cards = ({service, className}) => {
   return (
-    <div className="text-white p-12 bg-[rgb(18,27,33)] rounded">
+    <div className={`text-white p-12 bg-[rgb(18,27,33)] h-[400px] rounded ${className}`}>
       <div className="border-b-2 border-gray-500 card-bg relative">
         <h3 className="uppercase text-xl font-bold pb-6">
          {service?.name}
@@ -20,7 +20,7 @@ const Cards = ({service}) => {
        }
        </div>
         <p>
-          {service?.description ?  service?.description.slice(0,80).replace(/\s[^\s]*$/, '') : ''}...
+          {service?.description ?  service?.description : ''}
         </p>
       </div>
     </div>

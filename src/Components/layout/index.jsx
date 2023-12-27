@@ -5,8 +5,8 @@ import TawkToChat from '@/pages/TawkToChat';
 
 const index = ({ children }) => {
     return (
-        <div>
-            <Navbar />
+        <div className='fade-in'>
+            <Navbar/>
             {children}
             <TawkToChat />
             <Footer />

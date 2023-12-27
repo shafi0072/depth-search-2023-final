@@ -4,10 +4,10 @@ import ServicesData from './ServicesData/ServicesData';
 
 const Services = () => {
     return (
-        <>
+        <div className='fade-in'>
             <Banner/>
             <ServicesData/>
-        </>
+        </div>
     );
 };
 

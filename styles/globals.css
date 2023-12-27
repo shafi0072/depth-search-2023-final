@@ -111,3 +111,85 @@ body {
 .translateY-hover:hover{
   transform: translateY(-5px)
 }
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.fadeBottom {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.team-animation {
+  animation: zoomIn 1.5s ease-out;
+}
+.card-animation-1 {
+  animation: zoomIn 1s ease-out;
+}
+
+.card-animation-2 {
+  animation: zoomIn 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-from-1 {
+  animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+.animate-from-2 {
+  animation: slideInFromRight 1.5s ease-out forwards;
+}
+.animate-from-3 {
+  animation: slideInFromLeft 2.5s ease-out forwards;
+}
+.animate-from-4 {
+  animation: slideInFromRight 2.5s ease-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1.5s ease-out forwards;
+}

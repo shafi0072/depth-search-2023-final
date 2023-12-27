@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import PlayCircleOutlineOutlinedIcon from "@mui/icons-material/PlayCircleOutlineOutlined";
 import { createClient, groq } from "next-sanity";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import CloseIcon from "@mui/icons-material/Close";
+import useTypewriter from 'react-typewriter-hook';
 
 const style = {
   position: "absolute",
@@ -18,11 +19,22 @@ const style = {
   p: 4,
 };
 const index = () => {
+  const texts = [
+    "Web Development",
+    "Mobile Development",
+    "Digital Marketing",
+    "SEO Optimization",
+    "Performance Optimization"
+  ];
   const [author, setAuthor] = useState({});
   console.log({ author });
   const projectId = "kwzw2vfn";
   const dataset = "production";
   const apiVersion = "2023-05-03";
+  const [index, setIndex] = useState(0);
+  const [typing, setTyping] = useState('');
+  const intervalRef = useRef();
+  const magicName = useTypewriter(texts[index]);
   const client = createClient({
     projectId,
     dataset,
@@ -65,7 +77,15 @@ const index = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
+  useEffect(() => {
+    setTyping(magicName);
+  }, [magicName]);
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 5000); // Change text every 5000ms (5 seconds)
+    return () => clearInterval(intervalRef.current);
+  }, [texts.length]);
   return (
     <div>
       <div
@@ -78,8 +98,13 @@ const index = () => {
           <p className=" text-xl md:text-3xl font-semibold my-6">
             {author?.slug?.current}
           </p>
+          <div className="mt-[50px], mb-[50] h-[50px]">
+          <p className=" text-xl text-sky-500 md:text-3xl font-semibold my-6">
+            {typing}
+          </p>
+          </div>
           <div className="mt-10">
-            <button className="bg-primary px-6 py-4 rounded text-xl mr-4">
+            <button className="bg-primary cursor-pointer px-6 py-4 rounded text-xl mr-4">
               GET A QOUTE
             </button>
             <button className="hidden md:inline bg-white text-black px-6 py-4 rounded text-lg">
