@@ -4,6 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import Link from "next/link";
 const Footer = () => {
   return (
 		// <div className="bg-[#121B21]">
@@ -48,7 +49,7 @@ const Footer = () => {
 		//               href="https://www.designrush.com/agency/profile/depth-search"
 		//             >
 		//               Visit us in DESIGNRUSH
-		//             </a>
+		//             </Link>
 		//           </p>
 		//           <div className="flex items-center gap-4 pt-3">
 		//             <LinkedInIcon sx={{ fontSize: "30px" }} />
@@ -65,24 +66,24 @@ const Footer = () => {
 		//   </div>
 		// </div>
 		// bg-[#121B21]
-		<div className='bg-gradient-to-tl from-[#0F2027] via-[#203A43] to-[#2C5364]'>
+		<div className='bg-gradient-to-tl from-[#242424] via-[#0a0a0a] to-[#16282f]'>
 			{/* footer section start */}
 			<div className='max-w-screen-2xl mx-auto md:px-16 px-4 md:pt-16 py-6 md:pb-10'>
 				{/* top section start */}
 				<div className='container mx-auto'>
 					{/* title section start */}
 					<div>
-						<h1 className='text-3xl sm:text-4xl md:text-5xl md:-ms-12 lg:text-6xl font-bold'>
+						<h1 className=' text-2xl sm:text-4xl md:text-5xl md:-ms-14 lg:text-4xl font-bold'>
 							Let's Grow Your Brand
 						</h1>
 					</div>
 					{/* title section end */}
 					{/* item section start */}
-					<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-6  md:gap-12 lg:gap-22 my-10'>
+					<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-6  md:gap-12 lg:gap-22 my-10'>
 						{/* content1 start */}
 						<div>
 							{/* item title start */}
-							<h3 className='lg:text-2xl md:text-lg sm:text-2xl font-bold mb-4 text-3xl'>
+							<h3 className='lg:text-2xl text-sky-400 md:text-lg sm:text-2xl font-bold mb-4 text-3xl'>
 								Main Services
 							</h3>
 							{/* item title end */}
@@ -91,22 +92,22 @@ const Footer = () => {
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover '>
 									{" "}
 									{/* translateX-hover class for hover effect */}
-									<a href='#'>Custom Web Design</a>
+									<Link href='/services'>Web Development</Link>
 								</li>
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>eCommerce Web Design</a>
+									<Link href='/services'>Mobile App Development</Link>
 								</li>
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>Branding Services</a>
+									<Link href='/services'>Digital Marketing</Link>
 								</li>
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>Magento Web Design</a>
+									<Link href='/services'>Magento Web Design</Link>
 								</li>
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>eCommerce Development</a>
+									<Link href='/services'>eCommerce Development</Link>
 								</li>
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl translateX-hover'>
-									<a href='#'>WordPress Web Design</a>
+									<Link href='/services'>WordPress Web Design</Link>
 								</li>
 							</ul>
 							{/* item list end */}
@@ -115,91 +116,66 @@ const Footer = () => {
 						{/* content2 start */}
 						<div>
 							{/* item title start */}
-							<h3 className='lg:text-2xl md:text-lg sm:text-2xl font-bold mb-4 text-3xl'>
+							<h3 className='lg:text-2xl text-sky-400  md:text-lg sm:text-2xl font-bold mb-4 text-3xl'>
 								Apps & Development
 							</h3>
 							{/* item title end */}
 							{/* item list start */}
 							<ul className='list-none ms-1'>
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>Mobile App Development</a>
+									<Link href='/services'>Flutter</Link>
 								</li>
-								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>ERP Software Development</a>
-								</li>
-								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>Custom Web Development</a>
-								</li>
-								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>Magento Development</a>
-								</li>
-								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>Shopify Development</a>
+								
+							
+								
+								<li className='lg:text-lg md:text-base sm:text-lg text-xl translateX-hover'>
+									<Link href='/services'>React-Native</Link>
 								</li>
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl translateX-hover'>
-									<a href='#'>eCommerce Development</a>
+									<Link href='/services'>Next Js</Link>
+								</li>
+								<li className='lg:text-lg md:text-base sm:text-lg text-xl translateX-hover'>
+									<Link href='/services'>Nest Js</Link>
+								</li>
+								<li className='lg:text-lg md:text-base sm:text-lg text-xl translateX-hover'>
+									<Link href='/services'>Aws (Amazon Web Services)</Link>
+								</li>
+								<li className='lg:text-lg md:text-base sm:text-lg text-xl translateX-hover'>
+									<Link href='/services'>Cloud Computing (DevOps)</Link>
+								</li>
+								<li className='lg:text-lg md:text-base sm:text-lg text-xl translateX-hover'>
+									<Link href='/services'>MERN Stack (MongoDB, Express.js, React.js, Node.js)</Link>
 								</li>
 							</ul>
 							{/* item list end */}
 						</div>
 						{/* content2 end */}
 						{/* content3 start */}
-						<div>
-							{/* item title start */}
-							<h3 className='lg:text-2xl md:text-lg sm:text-2xl font-bold mb-4 text-3xl'>
-								Location Services
-							</h3>
-							{/* item title end */}
-							{/* item list start */}
-							<ul className='list-none ms-1'>
-								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>NYC Web Design</a>
-								</li>
-								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>California Web Design</a>
-								</li>
-								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>Los Angeles Web Design</a>
-								</li>
-								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>Miami Web Design</a>
-								</li>
-								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>San Francisco Web Design</a>
-								</li>
-								<li className='lg:text-lg md:text-base sm:text-lg text-xl translateX-hover'>
-									<a href='#'>San Diego Web Design</a>
-								</li>
-							</ul>
-							{/* item list end */}
-						</div>
+						
 						{/* content3 end */}
 						{/* content4 start */}
 						<div>
 							{/* item title start */}
-							<h3 className='lg:text-2xl md:text-lg sm:text-2xl font-bold mb-4 text-3xl'>
+							<h3 className='lg:text-2xl text-sky-400 md:text-lg sm:text-2xl font-bold mb-4 text-3xl'>
 								Company
 							</h3>
 							{/* item title end */}
 							{/* item list start */}
 							<ul className='list-none ms-1'>
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>About Us</a>
+									<Link href='/about'>About Us</Link>
 								</li>
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>Case Studies</a>
+									<Link href='/case-studies'>Case Studies</Link>
 								</li>
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>Digital Trends</a>
+									<Link href='/projects'>Projects</Link>
 								</li>
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>Sitemap</a>
-								</li>
-								<li className='lg:text-lg md:text-base sm:text-lg text-xl mb-1 translateX-hover'>
-									<a href='#'>Our Services</a>
+									<Link href='/services'>Our Services</Link>
 								</li>
 								<li className='lg:text-lg md:text-base sm:text-lg text-xl translateX-hover'>
-									<a href='#'>Contact Us</a>
+									<Link href='/contact-us'>Contact Us</Link>
 								</li>
 							</ul>
 							{/* item list end */}
@@ -227,56 +203,46 @@ const Footer = () => {
 				{/* logo section end */}
 				{/* "location section start */}
 				<div className='container mx-auto'>
-					<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-6  md:gap-12 lg:gap-22 my-10'>
+					<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-6  md:gap-12 lg:gap-22 my-10'>
 						{/* item section start */}
 						<div>
 							<h3 className='lg:text-2xl md:text-lg sm:text-2xl font-bold mb-2 text-3xl'>
 								Miami
 							</h3>
 							<p>
-								<a href='#'>
+								<Link href='/services'>
 									17975 Collins Avenue<br></br>Sunny Isles
 									Beach,<br></br>FL 33160
-								</a>
+								</Link>
 							</p>
 						</div>
 						{/* item section end */}
 						{/* item section start */}
 						<div>
 							<h3 className='lg:text-2xl md:text-lg sm:text-2xl font-bold mb-2 text-3xl'>
-								New York
+								Bangladesh
 							</h3>
 							<p>
-								<a href='#'>
-									18 West 18th Street<br></br>New York, NY
-									10011
-								</a>
+								<Link href='/services'>
+									Bangobandhu High-Tech Park<br></br>Rajshahi, Bangladesh
+								</Link>
 							</p>
 						</div>
 						{/* item section end */}
 						{/* item section start */}
 						<div>
 							<h3 className='lg:text-2xl md:text-lg sm:text-2xl font-bold mb-2 text-3xl'>
-								Chicago
+								India
 							</h3>
 							<p>
-								<a href='#'>
+								<Link href='/services'>
 									625 W Adams St<br></br>Chicago, IL 60661
-								</a>
+								</Link>
 							</p>
 						</div>
 						{/* item section end */}
 						{/* item section start */}
-						<div>
-							<h3 className='lg:text-2xl md:text-lg sm:text-2xl font-bold mb-2 text-3xl'>
-								California
-							</h3>
-							<p>
-								<a href='#'>
-									600 B St,<br></br>San Diego, CA 92101
-								</a>
-							</p>
-						</div>
+					
 						{/* item section end */}
 					</div>
 				</div>
@@ -288,21 +254,21 @@ const Footer = () => {
 				<div className='container mx-auto'>
 					<div className='block sm:flex sm:gap-6 md:gap-14'>
 						<p className='mt-2'>
-							<a href='#'>
-								©2023 Depth Search. All rights reserved
-							</a>
+							<Link href='/services'>
+								©{new Date().getFullYear()} Depth Search. All rights reserved
+							</Link>
 						</p>
 						<p className='mt-2'>
-							<a href='#'>Privacy Policy</a>
+							<Link href='/services'>Privacy Policy</Link>
 						</p>
 						<p className='mt-2'>
-							<a href='#'>Call us at +8801763740664</a>
+							<Link href='/services'>Call us at +8801763740664</Link>
 						</p>
 						<p className='mt-2'>
-							<a href='#'>hello@depthsearch.net</a>
+							<Link href='/services'>hello@depthsearch.net</Link>
 						</p>
 						<p className='mt-2'>
-							<a href='#'>collaboration@depthsearch.net</a>
+							<Link href='/services'>collaboration@depthsearch.net</Link>
 						</p>
 					</div>
 				</div>
