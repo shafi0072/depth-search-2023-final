@@ -26,6 +26,7 @@
     "react-typewriter-hook": "^1.0.2",
     "styled-components": "^5.3.11",
     "sweetalert2": "^11.7.31",
+    "swiper": "^11.0.5",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
