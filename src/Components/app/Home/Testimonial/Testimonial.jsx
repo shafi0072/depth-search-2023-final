@@ -32,7 +32,7 @@ const Testimonial = () => {
           <SwiperSlide key={index}>
             <div>
               <FormatQuoteIcon sx={{ fontSize: "70px" }} />
-              <p className="text-4xl font-semibold max-w-[700px] mx-auto">
+              <p className="text-xl font-semibold max-w-[800px] mx-auto text-gray-300">
                 {review?.reviewDescription}
               </p>
               <div className="flex items-center gap-3 justify-center my-6">
