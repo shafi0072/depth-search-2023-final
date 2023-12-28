@@ -12,7 +12,7 @@ const Banner = () => {
         </h2>
         <div className="mt-14">
           <button className="uppercase bg-primary px-6 py-4 rounded text-xl mr-4">
-          SPEAK WITH OUR EXPERTS
+          Contact With Us
           </button>
 
         </div>

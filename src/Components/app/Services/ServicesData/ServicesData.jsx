@@ -69,13 +69,12 @@ const ServicesData = () => {
                     <h2 className='text-4xl font-bold'> {item?.title} </h2>
                     <h3 className='text-md  font-medium my-4'> {item?.description} </h3>
                     <button className="uppercase  bg-primary px-6 py-4 rounded text-xl mr-4 my-5">
-                        Request a proposal
+                         Free Consultation
                     </button>
                     <ul>
                         {
                             item?.services?.map((data, index) => <li key={index} className='text-lg'> <ForwardOutlinedIcon className='text-red-500'/> {data} </li>)
-                        }
-                    </ul>
+                        } </ul>
                 </div>
             </div>)}
         </div>
