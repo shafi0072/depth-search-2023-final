@@ -42,7 +42,6 @@ const Cases = () => {
             // Access the full array of navbar data here
           });
       }, []);
-    
     return (
         <div className='flex flex-wrap gap-4 md:gap-0 justify-center overflow-hidden'>
             {cases.map((item, index) => <div key={index} className='cases h-[500px] md:h-[600px] lg:h-[765px] md:w-6/12 lg:w-4/12 relative overflow-hidden'>

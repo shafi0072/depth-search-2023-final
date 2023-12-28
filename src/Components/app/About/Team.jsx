@@ -5,7 +5,7 @@ const Team = ({ teams }) => {
         <div className='mt-[150px]  mx-10 mb-[50px]'>
             <div className='text-center'>
                 <h2 className='text-[38px] font-bold'>Meet The Leadership Team</h2>
-                <p className='text-[22px] font-medium mt-5'>Top industry with proven experience who are hands- <br />on in managing projects</p>
+                <p className='text-md font-medium mt-5'>Top industry with proven experience who are hands-on in managing projects</p>
             </div>
             <div className='mt-[70px] gap-y-3 md:gap-y-0 grid  md:grid-cols-3 lg:grid-cols-4'>
                 {

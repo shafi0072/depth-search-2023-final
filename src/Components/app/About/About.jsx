@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Banner from './Banner/Banner';
 import { createClient, groq } from 'next-sanity';
 import Team from './Team';
+import Vision from './Vision';
 
 const About = () => {
     const [teams, setTeams] = useState([])
@@ -42,7 +43,8 @@ const About = () => {
       }, []);
     return (
         <div>
-            <Banner teams={teams?.length}/>
+            {/* <Banner teams={teams?.length}/> */}
+            <Vision></Vision>
             <Team teams={teams}/>
         </div>
     );

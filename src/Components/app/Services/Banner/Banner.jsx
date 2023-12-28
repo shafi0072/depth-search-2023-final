@@ -2,13 +2,13 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className=" md:h-[60vh]  w-full text-center flex flex-col items-center justify-center py-12 md:py-0">
+        <div className="fadeBottom md:h-[60vh] md:pt-52 mb-20 w-full text-center flex flex-col items-center justify-center">
       <div className="text-white">
         <h1 className="uppercase text-xl md:text-2xl lg:text-3xl font-bold">
-        FROM CONCEPT TO REALITY
+        Empowering Your Digital Journey!
         </h1>
-        <h2 className=" text-xl md:text-4xl lg:text-7xl md:mx-[200px] font-semibold my-6 ">
-        Fusing Creativity With Marketing & Technology To Drive Business Growth
+        <h2 className="uppercase text-xl italic md:text-3xl lg:text-5xl md:mx-[200px] font-semibold my-6 ">
+        Custom Web, Mobile, and Marketing Solutions Tailored for your Business success
         </h2>
         <div className="mt-14">
           <button className="uppercase bg-primary px-6 py-4 rounded text-xl mr-4">

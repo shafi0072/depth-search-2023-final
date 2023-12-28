@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
   return (
-    <div className=" md:h-[60vh]  w-full text-center flex flex-col items-center justify-center py-12 md:py-0">
+    <div className=" md:h-[70vh] md:pt-20 w-full text-center flex flex-col items-center justify-center py-12 md:py-0">
       <div className="text-white">
         <h1 className="uppercase text-xl md:text-2xl lg:text-3xl font-bold">
           CASE STUDIES
@@ -14,7 +14,6 @@ const Banner = () => {
           <button className="uppercase bg-primary px-6 py-4 rounded text-xl mr-4">
             Request a proposal
           </button>
-
         </div>
       </div>
     </div>
