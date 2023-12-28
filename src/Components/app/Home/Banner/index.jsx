@@ -5,8 +5,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import CloseIcon from "@mui/icons-material/Close";
-import useTypewriter from 'react-typewriter-hook';
-
+import useTypewriter from "react-typewriter-hook";
+import Link from "next/link";
 const style = {
   position: "absolute",
   top: "50%",
@@ -24,7 +24,7 @@ const index = () => {
     "Mobile Development",
     "Digital Marketing",
     "SEO Optimization",
-    "Performance Optimization"
+    "Performance Optimization",
   ];
   const [author, setAuthor] = useState({});
   console.log({ author });
@@ -32,7 +32,7 @@ const index = () => {
   const dataset = "production";
   const apiVersion = "2023-05-03";
   const [index, setIndex] = useState(0);
-  const [typing, setTyping] = useState('');
+  const [typing, setTyping] = useState("");
   const intervalRef = useRef();
   const magicName = useTypewriter(texts[index]);
   const client = createClient({
@@ -90,7 +90,8 @@ const index = () => {
     <div>
       <div
         style={{ backgroundImage: `url(${author?.image?.asset?.url})` }}
-        className="bg-image md:h-[75vh] lg:h-[90vh] w-full text-center flex flex-col items-center justify-center py-12 md:py-0">
+        className="bg-image md:h-[75vh] lg:h-[90vh] w-full text-center flex flex-col items-center justify-center py-12 md:py-0"
+      >
         <div className="text-white">
           <h2 className="uppercase text-4xl md:text-5xl lg:text-7xl font-bold">
             {author?.name}
@@ -99,17 +100,23 @@ const index = () => {
             {author?.slug?.current}
           </p>
           <div className="mt-[50px], mb-[50] h-[50px]">
-          <p className=" text-xl text-sky-500 md:text-3xl font-semibold my-6">
-            {typing}
-          </p>
+            <p className=" text-xl text-sky-500 md:text-3xl font-semibold my-6">
+              {typing}
+            </p>
           </div>
           <div className="mt-10">
-            <button className="bg-primary cursor-pointer px-6 py-4 rounded text-xl mr-4">
+            <Link
+              href={"contact-us"}
+              className="bg-primary cursor-pointer px-6 py-4 rounded text-xl mr-4"
+            >
               GET A QOUTE
-            </button>
-            <button className="hidden md:inline bg-white text-black px-6 py-4 rounded text-lg">
+            </Link>
+            <Link
+              href={"services"}
+              className="hidden md:inline bg-white text-black px-6 py-4 rounded text-lg"
+            >
               EXPLORE MORE
-            </button>
+            </Link>
           </div>
         </div>
         <div className="mt-8 cursor-pointer animate-pulse relative ">
