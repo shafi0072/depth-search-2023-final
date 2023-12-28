@@ -108,9 +108,8 @@ const index = () => {
 
          </video> */}
 
-          <video className="w-full h-[100vh] mx-auto" autoPlay controls >
-
-            <source  src={author?.video?.asset?.url} type="video/mp4" />
+          <video className="w-full h-[100vh] mx-auto" autoPlay controls>
+            <source src={author?.video?.asset?.url} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
